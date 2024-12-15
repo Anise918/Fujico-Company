@@ -27,7 +27,7 @@ const App = () => {
 
       <div className='md:hidden'>
       {/* Header for smaller screens */}
-      <header className='absolute top-0 left-0 block  lg:hidden md:hidden w-full '>
+      <header className=' fixed top-0 left-0 block   lg:hidden md:hidden w-full z-50 '>
         <div className='flex items-center justify-around text-2xl border rounded-full shadow-xl'>
           <h1 className='font-space font-extrabold mt-2 mb-4 text-red-600'>FUJICO</h1>
           <ImMenu
@@ -41,29 +41,50 @@ const App = () => {
 
           
           <ul className="flex flex-col items-center">
-            <li className="py-3 text-2xl hover:text-red-600">Home</li>
-            <li className="py-3 text-2xl hover:text-red-600">About us</li>
-            <li className="py-3 text-2xl hover:text-red-600">Services</li>
-            <li className="py-3 text-2xl hover:text-red-600">Contact us</li>
-          </ul>
+          
+          <li className="py-3 text-2xl hover:text-red-600">
+      <a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a>
+    </li>
+    <li className="py-3 text-2xl hover:text-red-600">
+      <a href="#about" onClick={() => setIsMenuOpen(false)}>About us</a>
+    </li>
+    <li className="py-3 text-2xl hover:text-red-600">
+      <a href="#services" onClick={() => setIsMenuOpen(false)}>Services</a>
+    </li>
+    <li className="py-3 text-2xl hover:text-red-600">
+      <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact us</a>
+    </li>
+
+</ul>
+
+          
           </nav>
         )}
       </header>
       </div>
       {/* Header for larger screens */}
-      <header className='absolute top-0 left-0 hidden md:block lg:block p-4 
-      font-sans  border rounded-full w-full '> 
-        <div className='flex justify-around items-center text-2xl mt-4 '>
-          <h1 className='font-manrope mb-4 text-red-600'>FUJICO</h1>
-          <ul className="flex mb-4">
-            <li className="px-3 hover:text-red-600 " onClick={toggleMenu}>Home</li>
-            <li className="px-3 hover:text-red-600"onClick={toggleMenu} >About us</li>
-            <li className="px-3 hover:text-red-600"onClick={toggleMenu}>Services</li>
-            <li className="px-3 hover:text-red-600"onClick={toggleMenu}>Contact us</li>
-          </ul>
-        </div>
-      </header>
+      <header className='absolute top-0 left-0 hidden md:block lg:block p-4 z-50
+font-sans border rounded-full w-full'> 
+  <div className='flex justify-around items-center text-2xl mt-4'>
+    <h1 className='font-manrope mb-4 text-red-600'>FUJICO</h1>
+    <ul className="flex mb-4">
+      <li className="px-3 hover:text-red-600">
+        <a href="#home">Home</a>
+      </li>
+      <li className="px-3 hover:text-red-600">
+        <a href="#about">About us</a>
+      </li>
+      <li className="px-3 hover:text-red-600">
+        <a href="#services">Services</a>
+      </li>
+      <li className="px-3 hover:text-red-600">
+        <a href="#contact">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</header>
 
+  
       <Home/>
       
 

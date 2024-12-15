@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import About from './About';
+import Service from './Service';
 
 import { IoChevronBackCircle } from "react-icons/io5";
 import { IoChevronForwardCircleSharp } from "react-icons/io5";
@@ -39,7 +41,7 @@ const Home = () => {
 
 
   return (
-    <div className=''>
+    <div id="home" className="min-h-screen">
       <div className=''>
         {/* Image with opacity, shown on all screen sizes */}
         <img className='w-full h-auto md:h-1/2' src="/Fujico.jpg" alt="Description" />
@@ -47,56 +49,43 @@ const Home = () => {
         {/* Text over image (only visible on small screens) */}
         <div className='w-3/4 mx-auto flex flex-col justify-center mb-4 '>
         <img className='w-full h-auto md:hidden' src="/Image-2.jpg" alt="Description" />
-          <h1 className='font-protest  text-6xl text-blue-800 mb-5 text-center'>Rising Higher</h1>
-          <p className='font-protest mb-5 text-center'>Expert lift Installation, Service, and Maintenance</p>
+          
         </div>
       </div>
 
-      
+      <About/>
+      <Service/>
 
-      {/* Other content */}
-      <div className='md:flex flex-row justify-between items-start'>
-  {/* Left Content Section */}
-  <div className='md:w-1/2 p-4'>
-    {/* Content Blocks */}
-    <div className='text-center '>
-      <p className='text-red-300 opacity-50 text-8xl font-protest'>01</p>
-      <h2 className='text-2xl mt-3 mb-3 font-bold font-roboto text-blue-800'>Design & Building</h2>
-      <p className='font-light'>"At Fujico Technologies, we specialize in designing and building state-of-the-art lifts that combine precision engineering with modern aesthetics."</p>
-      
-      <p className='text-red-300 opacity-50 text-8xl font-protest'>02</p>
-      <h2 className='text-2xl font-roboto mt-3 mb-3 font-bold text-blue-800'>Remodelling</h2>
-      <p className='font-light'>We design, build, and remodel lifts with precision engineering and modern aesthetics. Our customized solutions deliver reliability and seamless performance for every project.</p>
-      
-      <p className='text-red-300 opacity-50 text-8xl font-protest'>03</p>
-      <h2 className='text-2xl font-roboto mt-3 mb-3 font-bold text-blue-800'>Reliability</h2>
-      <p className='font-light'>With our focus on precision and innovation, our solutions guarantee consistent performance and superior quality for every project.</p>
-      
-      <p className='text-red-300 opacity-50 text-8xl font-protest'>04</p>
-      <h2 className='text-2xl font-roboto mt-3 mb-3 font-bold text-blue-800'>Safety</h2>
-      <p className='font-light'>Our solutions prioritize top-tier safety standards and seamless performance in every project.</p>
-      
-      <p className='text-red-300 opacity-50 text-8xl font-protest'>05</p>
-      <h2 className='text-2xl font-roboto mt-3 mb-3 font-bold text-blue-800'>Trusted Partner</h2>
-      <p className='font-light'>Fujico Technologies is your trusted partner for lift design, construction, and remodeling. We bring innovation and precision to every project, ensuring quality you can rely on.</p>
-    </div>
+     
+
+<div className='mt-8 '>
+<div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-around lg:gap-8">
+  <div className="lg:w-1/3 text-center lg:text-left">
+    <h1 className='text-2xl font-space text-red-600 uppercase font-bold mb-5 ml-8'>
+      Our Projects
+    </h1>
+    <h2 className='font-space font-bold text-6xl text-blue-800 mb-5 mt-4 ml-8'>
+      Innovative
+    </h2>
+    <h3 className='font-protest text-lg font-light text-black mb-4 ml-8'>Reliable and impactful</h3>
   </div>
-
-  {/* Right Image Section */}
-  <div className='md:w-full p-4 flex flex-col items-center'>
-    <img src="/Generator.png" alt="Profile" className='max-w-full h-auto' />
-    <img src="/Generator-2.png" alt="Profile" className='max-w-full h-auto' />
+  <div className="lg:w-2/3">
+    <p className='mb-7 font-roboto text-gray-600 text-center lg:text-left'>
+      We take pride in our rich experience, 
+      having successfully delivered projects both locally and internationally, 
+      demonstrating our commitment to excellence and innovation on a global scale. <br/>
+      Locally, Fujico Limited has worked on notable projects such as building elevators in 
+     <span className='text-red-600'> Biashara Plaza - Thika Town, Bazar Villas - Thika, Pearl Gardens, City Se Breeze,</span>
+       and 
+       <span className='text-red-600'>Sunny Heights.</span> 
+      <br/>Internationally, we have collaborated with esteemed clients, 
+      including Erigavo Hotel, Somali Telecom, 
+      Kharia Telesom Head Office, Hormud, and Grand Plaza.
+    </p>
   </div>
 </div>
 
-<div className='mt-8 '>
-  <div>
-    <h1 className='text-6xl text-center  font-protest text-blue-800  mb-5'>Our Projects</h1>
-    <p className='mb-7 font-protest text-center '>"We take pride in our rich experience, having successfully delivered 
-      projects both locally and internationally—including in Mogadishu and 
-      Ethiopia—demonstrating 
-      our commitment to excellence and innovation on a global scale."</p>
-  </div>
+
   <div className="relative w-full flex items-center justify-center">
       {/* Display only the current image */}
       <div className="flex overflow-hidden w-3/4 md:w-full justify-center">
@@ -121,8 +110,9 @@ const Home = () => {
     </div>
     <div className='md:flex justify-around items-center'>
   <div className='md:w-1/2'>
-    <h1 className='capitalize font-protest text-6xl  mb-6 mt-7 text-blue-800 text-center'>Why us</h1>
-    <h4 className='text-3xl mb-6 text-center'>This is why you should <span className='text-red-300'>choose us</span></h4>
+    <h1 className='text-2xl font-space text-red-600 uppercase font-bold mb-5 ml-8'>Why us</h1>
+    <h4 className='font-space font-bold text-6xl text-blue-800 mb-5 mt-4 sm: ml-8 '> We deliver </h4>
+    <p className='font-protest mb-5 ml-8'>excellence with innovation, reliability, and trust."</p>
     
     <div className='flex flex-col gap-3 mb-6 text-xl w-3/4 mx-auto'>
       <div className='flex gap-3 mb-2'>
@@ -155,34 +145,41 @@ const Home = () => {
   </div>
 </div>
 <div className=''>
-  <div>
-  <h1 className='text-blue-800 text-5xl font-protest text-center mb-5'>Our Team</h1>
+<div>
+<h1 className='text-2xl font-space text-red-600 uppercase font-bold mb-5 ml-8'>Our Team</h1>
+    <h4 className='font-space font-bold text-6xl text-blue-800 mb-5 mt-4 sm: ml-8 '>
+       Our Definition </h4>
+    <p className='font-protest mb-5 ml-8'>Is Expertise and Innovation"</p>
+    
+</div>
+<div className='w-3/4 mx-auto md:flex gap-4'>
+  <div className="flex flex-col bg-gray-100 mb-3 md:h-80 md:w-1/3 border rounded-lg">
+    <VscLaw className="text-6xl text-center mt-2" />
+    <p className="font-bold mt-1 text-center">Everlyne Nereah</p>
+    <h1 className="font-bold mt-2 mb-1 text-center">Legal Advisor/Company Secretary</h1>
+    <p className="text-gray-600 text-center mt-2 mb-3 px-4">Everlyne ensures that Fujico Ltd. adheres to all legal standards, providing crucial legal advice and company secretarial support.</p>
   </div>
-   <div className=' w-3/4 mx-auto md:flex gap-4'>
-   <div className=" flex flex-col bg-gray-100 mb-3  md:h-80  md:w-1/3 border rounded-lg ">
-   <VscLaw className="text-6xl text-center mt-2" />
-   <p className="font-bold mt-1 text-center">Everlyne Nereah</p>
-   <h1 className="font-bold mt-2 mb-1 text-center">Legal Advisor/Company Secretary</h1>
- </div>
- 
- <div className="flex flex-col bg-gray-100 mb-3 mx-auto md:mr-2 md:w-1/3 border rounded-lg ">
-   <FaCogs className="text-6xl text-center mt-2" />
-   <p className="font-bold mt-1 text-center">Collins Okeyo</p>
-   <h1 className="font-bold mt-2 mb-1 text-center">Technical Operations</h1>
- </div>
-   
- <div className="flex flex-col bg-gray-100 mb-3  mx-auto md:mr-2 md:w-1/3 border rounded-lg ">
-   <FaPeopleGroup className="text-6xl text-center mt-2" />
-   <p className="font-bold mt-1 text-center">Paul Nderitu</p>
-   <h1 className="font-bold mt-2 mb-1 text-center">Sales and Marketing</h1>
- </div>
 
- <div className="flex flex-col bg-gray-100 mb-3  mx-auto md:mr-2 md:w-1/3 border rounded-lg ">
-   < FaHelmetUn className="text-6xl text-center mt-2" />
-   <p className="font-bold mt-1 text-center">Eric Alao</p>
-   <h1 className="font-bold mt-2 mb-1 text-center">Installation supervisor</h1>
- </div>
-  
+  <div className="flex flex-col bg-gray-100 mb-3 mx-auto md:mr-2 md:w-1/3 border rounded-lg">
+    <FaCogs className="text-6xl text-center mt-2" />
+    <p className="font-bold mt-1 text-center">Collins Okeyo</p>
+    <h1 className="font-bold mt-2 mb-1 text-center">Technical Operations</h1>
+    <p className="text-gray-600 text-center mt-2 mb-3 px-4">Collins oversees all technical operations, ensuring the seamless execution and maintenance of our elevator solutions.</p>
+  </div>
+
+  <div className="flex flex-col bg-gray-100 mb-3 mx-auto md:mr-2 md:w-1/3 border rounded-lg">
+    <FaPeopleGroup className="text-6xl text-center mt-2" />
+    <p className="font-bold mt-1 text-center">Paul Nderitu</p>
+    <h1 className="font-bold mt-2 mb-1 text-center">Sales and Marketing</h1>
+    <p className="text-gray-600 text-center mt-2 mb-3 px-4">Paul leads our sales and marketing efforts, driving business growth and building strong relationships with our clients.</p>
+  </div>
+
+  <div className="flex flex-col bg-gray-100 mb-3 mx-auto md:mr-2 md:w-1/3 border rounded-lg">
+    <FaHelmetUn className="text-6xl text-center mt-2" />
+    <p className="font-bold mt-1 text-center">Eric Alao</p>
+    <h1 className="font-bold mt-2 mb-1 text-center">Installation Supervisor</h1>
+    <p className="text-gray-600 text-center mt-2 mb-3 px-4">Eric is responsible for the supervision of elevator installations, ensuring that each project meets our high standards of safety and quality.</p>
+  </div>
 </div>
 </div>
 </div>
