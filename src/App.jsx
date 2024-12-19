@@ -27,8 +27,9 @@ const App = () => {
 
       <div className='md:hidden'>
       {/* Header for smaller screens */}
-      <header className=' fixed top-0 left-0 block   lg:hidden md:hidden w-full z-50 '>
-        <div className='flex items-center justify-around text-2xl border rounded-full shadow-xl'>
+      <header className=' fixed top-0 left-0 block lg:hidden md:hidden w-full shadow-xl z-50  '>
+        <div className='flex items-center justify-around text-2xl bg-white border
+         rounded-full shadow-xl'>
           <h1 className='font-space font-extrabold mt-2 mb-4 text-red-600'>FUJICO</h1>
           <ImMenu
             className='block lg:hidden md:hidden text-blue-800 mt-2 mb-4 cursor-pointer'
@@ -63,9 +64,9 @@ const App = () => {
       </header>
       </div>
       {/* Header for larger screens */}
-      <header className='absolute top-0 left-0 hidden md:block lg:block p-4 z-50
-font-sans border rounded-full w-full'> 
-  <div className='flex justify-around items-center text-2xl mt-4'>
+      <header className='fixed top-0 left-0 hidden md:block lg:block p-4 z-50
+font-sans border rounded-full w-full bg-white'> 
+  <div className='flex justify-around items-center text-2xl mt-4 '>
     <h1 className='font-manrope mb-4 text-red-600'>FUJICO</h1>
     <ul className="flex mb-4">
       <li className="px-3 hover:text-red-600">

@@ -1,8 +1,10 @@
 import React from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';  // Import AOS styles
 
 const Service = () => {
   return (
-    <div id="services" className="mt-7 mx-auto min-h-screen bg-yellow-100">
+    <div id="services" className="mt-7 mx-auto min-h-screen bg-purple-200">
 
       <div>
         <h1 className='text-red-500 font-space text-2xl uppercase 
@@ -49,7 +51,80 @@ const Service = () => {
   </div>
 </div>
 
+<div>
+    <h1 className='uppercase text-2xl text-red-500 mb-4 mt-5
+    font-bold font-space text-center'>what we do</h1>
+  </div>
+  <div className="mx-auto w-3/4 md:w-full md:flex md:flex-row justify-between items-center gap-8">
 
+  {/* Text Section */}
+  {/* Service List - Cards */}
+  
+  <div className="md:grid grid-cols-3 gap-6 md:px-9 ">
+        {/* Home Lifts Card */}
+        <div className="service-card text-center bg-blue-900 p-6 
+        rounded-lg shadow-xl sm: mb-2 md:mb-0" data-aos="fade-down" data-aos-delay="">
+          <h3 className="text-2xl font-roboto font-bold text-white mb-3">Home Lifts</h3>
+          <p className=" mb-4 text-white font-roboto">Enhance your living space with our custom-designed home lifts, combining convenience, style, and efficiency.</p>
+        </div>
+
+        {/* Goods Lifts Card */}
+        <div className="service-card text-center bg-red-400 p-6 rounded-lg shadow-lg sm:
+         mb-2 md:mb-0" data-aos="fade-up">
+          <h3 className="text-2xl font-roboto text-blue-800 font-bold mb-3">Goods Lifts</h3>
+          <p className="text-white mb-4 font-roboto">Reliable goods lifts designed to carry heavy items safely and efficiently, optimizing your operations.</p>
+        </div>
+
+        {/* Walkways Card */}
+        <div className="service-card text-center bg-yellow-300 p-6 
+        rounded-lg shadow-lg sm: mb-2 md:mb-0" data-aos="fade-up">
+          <h3 className="text-2xl font-roboto text-blue-800 font-bold mb-3">Walkways</h3>
+          <p className="text-gray-600 mb-4 font-roboto">Designing and building smooth and reliable walkways for convenience and safety in various environments.</p>
+        </div>
+
+        {/* Dumbwaiters Card */}
+        <div className="service-card text-center bg-yellow-300 p-6 rounded-lg 
+        shadow-lg sm: mb-2 md:mb-0" data-aos="fade-up">
+          <h3 className="text-2xl font-roboto text-blue-800 font-bold mb-3">Dumbwaiters</h3>
+          <p className="text-gray-600 mb-4 font-roboto">Simplify the movement of goods between floors with our easy-to-install and efficient dumbwaiters.</p>
+        </div>
+
+        {/* Lift Maintenance Card */}
+        <div className="service-card text-center bg-red-400 p-6 rounded-lg shadow-lg 
+        sm: mb-2 md:mb-0" data-aos="fade-up">
+          <h3 className="text-2xl font-roboto text-white font-bold mb-3">Lift Maintenance</h3>
+          <p className="text-white mb-4 font-roboto">Keep your lifts operating smoothly with our reliable maintenance services designed to ensure longevity and efficiency.</p>
+        </div>
+
+        {/* Lift Repair Card */}
+        <div className="service-card text-center bg-yellow-300 p-6 rounded-lg shadow-lg 
+        sm: mb-2 md:mb-0" data-aos="fade-up">
+        
+          <h3 className="text-2xl font-roboto text-blue-800 font-bold mb-3">Lift Repair</h3>
+          <p className="text-gray-600 mb-4 font-roboto">Fast and efficient lift repair services to minimize downtime and ensure safety and functionality.</p>
+        </div>
+
+        {/* Lift Modernization Card */}
+        <div className="service-card text-center bg-red-300  p-6 rounded-lg shadow-lg 
+        sm: mb-2 md:mb-4" data-aos="fade-up">
+          <h3 className="text-2xl font-roboto text-blue-800 font-bold mb-5">Lift Modernization</h3>
+          <p className="text-white mb-4 font-roboto">Upgrade your existing lifts with the latest technology, enhancing performance, energy efficiency, and safety.</p>
+        </div>
+      </div>
+
+  
+  {/* Image Section *  <div className="w-full md:w-1/2 order-1 md:order-2">
+  <img 
+    src="/escalator.png" 
+    alt="Profile" 
+    className="max-w-full h-auto" 
+    style={{
+      filter:  "grayscale(100%) brightness(100%)"
+    }}
+  />
+</div>*/}
+
+</div>
 
 
     </div>

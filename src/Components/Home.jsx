@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import About from './About';
 import Service from './Service';
+import Contact from './Contact';
 
 import { IoChevronBackCircle } from "react-icons/io5";
 import { IoChevronForwardCircleSharp } from "react-icons/io5";
@@ -67,10 +68,16 @@ const Home = () => {
     <h2 className='font-space font-bold text-6xl text-blue-800 mb-5 mt-4 ml-8'>
       Innovative
     </h2>
-    <h3 className='font-protest text-lg font-light text-black mb-4 ml-8'>Reliable and impactful</h3>
+    <h3 className='font-protest text-lg font-light text-black mb-4 ml-8'>
+      Reliable and impactful</h3>
+      
+      
   </div>
-  <div className="lg:w-2/3">
-    <p className='mb-7 font-roboto text-gray-600 text-center lg:text-left'>
+ 
+  <div className="lg:w-1/2">
+  <img className='border rounded-lg mb-9' src=' https://images.unsplash.com/photo-1660492039315-065884716fea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.
+  3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGVzY2FsYXRvcnN8ZW58MHx8MHx8fDA%3D'/>
+    <p className='mb-7 sm: mt-0  font-roboto leading-relaxed text-gray-600 text-center lg:text-left'>
       We take pride in our rich experience, 
       having successfully delivered projects both locally and internationally, 
       demonstrating our commitment to excellence and innovation on a global scale. <br/>
@@ -94,6 +101,7 @@ const Home = () => {
              p-2   mb-8"/>
           ))}
         </div>
+        
 
       {/* Navigation icons */}
       <div className="absolute top-1/2 left-0 right-0 flex justify-around md:justify-between transform -translate-y-1/2 px-4">
@@ -108,6 +116,7 @@ const Home = () => {
       </div>
   </div>
     </div>
+    <Contact/>
     <div className='md:flex justify-around items-center'>
   <div className='md:w-1/2'>
     <h1 className='text-2xl font-space text-red-600 uppercase font-bold mb-5 ml-8'>Why us</h1>
