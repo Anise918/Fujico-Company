@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';  // Import AOS styles
 
 const Service = () => {
   return (
-    <div id="services" className="mt-7 mx-auto min-h-screen bg-purple-200">
+    <div id="services" className="mt-7 mx-auto min-h-screen scroll-mt-20 bg-purple-100 ">
 
       <div>
         <h1 className='text-red-500 font-space text-2xl uppercase 

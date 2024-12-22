@@ -75,7 +75,7 @@ const Home = () => {
   </div>
  
   <div className="lg:w-1/2">
-  <img className='border rounded-lg mb-9' src=' https://images.unsplash.com/photo-1660492039315-065884716fea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.
+  <img className='border rounded-lg mb-9 ' src=' https://images.unsplash.com/photo-1660492039315-065884716fea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.
   3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGVzY2FsYXRvcnN8ZW58MHx8MHx8fDA%3D'/>
     <p className='mb-7 sm: mt-0  font-roboto leading-relaxed text-gray-600 text-center lg:text-left'>
       We take pride in our rich experience, 
@@ -155,13 +155,15 @@ const Home = () => {
 </div>
 <div className=''>
 <div>
-<h1 className='text-2xl font-space text-red-600 uppercase font-bold mb-5 ml-8'>Our Team</h1>
+<h1 id='team' className='text-2xl font-space text-red-600 uppercase font-bold scroll-mt-20
+ mb-5 ml-8
+'>Our Team</h1>
     <h4 className='font-space font-bold text-6xl text-blue-800 mb-5 mt-4 sm: ml-8 '>
        Our Definition </h4>
     <p className='font-protest mb-5 ml-8'>Is Expertise and Innovation"</p>
     
 </div>
-<div className='w-3/4 mx-auto md:flex gap-4'>
+<div  className='w-3/4 mx-auto md:flex gap-4 '>
   <div className="flex flex-col bg-gray-100 mb-3 md:h-80 md:w-1/3 border rounded-lg">
     <VscLaw className="text-6xl text-center mt-2" />
     <p className="font-bold mt-1 text-center">Everlyne Nereah</p>

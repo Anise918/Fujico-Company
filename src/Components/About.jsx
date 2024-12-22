@@ -11,7 +11,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="min-h-screen">
+    <div id="about" className="min-h-screen scroll-mt-20">
       <div className='md:flex justify-around'>
         <div data-aos="fade-up">
           <h1 className='font-space font-bold text-red-500 text-2xl
@@ -57,11 +57,15 @@ const About = () => {
       </div>
     </div>
     <div className='flex justify-center'>
-        <button className='bg-red-500 text-white border rounded-full py-3 px-5
-         hover:bg-yellow-600
-        mt-5' data-aos="fade-up" data-aos-delay="400">
-          Meet Our Team
-        </button>
+    <a 
+  href="#team" 
+  className="bg-red-500 text-white border rounded-full py-3 px-5 hover:bg-yellow-600 mt-5" 
+  data-aos="fade-up" 
+  data-aos-delay="400"
+>
+  Meet Our Team
+</a>
+
       </div>
     </div>
   );

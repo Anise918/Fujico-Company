@@ -64,7 +64,7 @@ const App = () => {
       </header>
       </div>
       {/* Header for larger screens */}
-      <header className='fixed top-0 left-0 hidden md:block lg:block p-4 z-50
+      <header className=' header fixed top-0 left-0 hidden md:block lg:block p-4 z-50
 font-sans border rounded-full w-full bg-white'> 
   <div className='flex justify-around items-center text-2xl mt-4 '>
     <h1 className='font-manrope mb-4 text-red-600'>FUJICO</h1>
@@ -88,31 +88,48 @@ font-sans border rounded-full w-full bg-white'>
   
       <Home/>
       
-
+      
       <div>
-        <footer className='bg-blue-950 '>
-          <div className=''>
-          <h1 className='font-space text-white text-4xl mt-10 mb-7 text-center'>Our Company</h1>
-          <p className='text-white mb-6 text-center'>Fujico Technologies Ltd is a trusted leader in elevator solutions, 
-            specializing in design, installation, and maintenance. We deliver precision, 
-            safety, and innovation tailored to your needs."</p>
-          </div>
-          <div className='flex flex-row mb-6 gap-3 text-center '>
-          <SiInstagram className='text-white text-3xl'/>
-          <ImFacebook2 className='text-white text-3xl'/>
-         < FaXTwitter className='text-white text-3xl'/>
-          </div>
-            <div>
-            <ul className="flex flex-col items-center">
-            <li className="py-3 text-xl text-white hover:text-red-600">Home</li>
-            <li className="py-3 text-xl text-white hover:text-red-600">About us</li>
-            <li className="py-3 text-xl text-white hover:text-red-600">Services</li>
-            <li className="py-3 text-xl text-white hover:text-red-600">Contact us</li>
-          </ul>
-            </div>
-        </footer>
+  <footer className='bg-blue-950'>
+    {/* Main footer container */}
+    <div className='flex flex-col md:flex-row md:justify-evenly items-center'>
+      {/* Left section with company details */}
+      <div className='text-center md:text-left mb-6 md:mb-0'>
+        <h1 className='font-space text-white text-4xl mt-10 mb-7'>Our Company</h1>
+        <p className='text-white mb-6 md:w-1/2'>
+          Fujico Technologies Ltd is a trusted leader in elevator solutions, specializing in design, installation, and maintenance. We deliver precision, safety, and innovation tailored to your needs.
+        </p>
       </div>
-         
+
+      {/* Social media icons */}
+      <div className='flex justify-center gap-3 mb-6 md:mb-0'>
+        <SiInstagram className='text-white text-3xl' />
+        <ImFacebook2 className='text-white text-3xl' />
+        <FaXTwitter className='text-white text-3xl' />
+      </div>
+
+      {/* Footer navigation links */}
+      <div className="md:flex md:justify-center w-full">
+        <ul className="flex flex-col items-center">
+          <li className="py-3 text-white text-xl hover:text-red-600">
+            <a href="#home">Home</a>
+          </li>
+          <li className="py-3 text-white text-xl hover:text-red-600">
+            <a href="#about">About us</a>
+          </li>
+          <li className="py-3 text-white text-xl hover:text-red-600">
+            <a href="#services">Services</a>
+          </li>
+          <li className="py-3 text-white text-xl hover:text-red-600">
+            <a href="#contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+      
     </div>
   );
 };
