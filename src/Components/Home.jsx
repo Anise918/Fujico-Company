@@ -74,10 +74,11 @@ const Home = () => {
       
   </div>
  
-  <div className="lg:w-1/2">
+  <div className=" md:w-1/2">
   <img className='border rounded-lg mb-9 ' src=' https://images.unsplash.com/photo-1660492039315-065884716fea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.
   3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGVzY2FsYXRvcnN8ZW58MHx8MHx8fDA%3D'/>
-    <p className='mb-7 sm: mt-0  font-roboto leading-relaxed text-gray-600 text-center lg:text-left'>
+    <p className='mb-7 sm: mt-0  font-roboto leading-relaxed
+     text-gray-600 text-center  lg:text-left'>
       We take pride in our rich experience, 
       having successfully delivered projects both locally and internationally, 
       demonstrating our commitment to excellence and innovation on a global scale. <br/>
@@ -116,6 +117,70 @@ const Home = () => {
       </div>
   </div>
     </div>
+    <div className='w-3/4 mx-auto'>
+      <h2 className='text-red-600 font-space text-xl mb-6'>fujico technologies at work</h2>
+      <p className="text-blue-800 font-roboto  text-lg mb-8">
+      Witness our team in action as we bring innovative elevator solutions to life.
+      From installation to finishing touches, we ensure precision and excellence every 
+      step of the way.
+    </p>
+    </div> 
+    <div className='  w-3/4 mx-auto md:grid grid-cols-2'>
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl mb-6">
+        <img
+          src="profileproject.jpg"
+          alt="Technicians preparing the elevator shaft"
+          className="w-full transform transition duration-300 ease-in-out hover:scale-110"
+        />
+        <p className="p-4 text-gray-600  font-semibold">
+        A Fujico Technologies technician carefully installs the landing door, 
+        ensuring precise alignment and secure fitting. This crucial step involves expert
+         craftsmanship and attention to detail,
+         as the landing door must function smoothly and safely.</p>
+        </div>
+
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-xl mb-6">
+        <img
+          src="unfinished-1.jpg"
+          alt=""
+          className="w-full transform transition duration-300 ease-in-out hover:scale-110 "
+        />
+        <p className="p-4 text-gray-600 font-semibold">
+        A detailed view of the elevator's steel structure fabrications, 
+        showcasing the robust metal framework that supports the entire elevator system. 
+        This phase highlights the precision engineering and durable materials used to
+         ensure structural 
+        integrity and safety throughout the installation process. </p>
+    </div>
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl mb-6">
+        <img
+          src="unfinished-2.jpg"
+          alt="Technicians preparing the elevator shaft"
+          className=" w-full transform transition duration-300 ease-in-out hover:scale-110"
+        />
+        <p className="p-4 text-gray-600 font-semibold">
+        Elevator motor installation showcases precision and expertise, with neatly aligned
+         wires and meticulously placed mechanical components. 
+        Fujico Technologies ensures safety and functionality at every step of the process. </p>
+        </div>
+
+
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-xl mb-6">
+        <img
+          src="Lift door.jpg"
+          alt="Technicians preparing the elevator shaft"
+          className="w-full transform transition duration-300 ease-in-out hover:scale-110 "
+        />
+        <p className="p-4 text-gray-600 font-semibold">
+        A set of completed stainless steel landing doors, expertly installed, 
+        showcasing a sleek and durable finish, 
+        ensuring both aesthetic appeal and long-lasting functionality. </p>
+        </div>
+        </div>
+
+
+
+
     <Contact/>
     <div className='md:flex justify-around items-center'>
   <div className='md:w-1/2'>

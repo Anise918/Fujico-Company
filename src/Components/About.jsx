@@ -19,10 +19,10 @@ const About = () => {
             About Us
           </h1>
           <h1 className='font-space font-bold text-6xl text-blue-800 mb-5 mt-4 sm: ml-8'>Rising Higher</h1>
-          <p className='font-protest mb-5'>Expert lift Installation, Service, and Maintenance</p>
+          <p className='font-protest mb-5 ml-8'>Expert lift Installation, Service, and Maintenance</p>
         </div>
 
-        <p className=" md:w-1/2 text-center font-light font-roboto text-gray-600"
+        <p className=" md:w-1/2 ml-5 mr-5 text-center font-light font-roboto text-gray-600"
          data-aos="zoom-in"data-aos-delay="400">
           Founded in 2016 and officially registered as a business in 2019, 
           <span className="text-red-500 font-bold"> Fujico Technologies Limited </span>
@@ -59,7 +59,8 @@ const About = () => {
     <div className='flex justify-center'>
     <a 
   href="#team" 
-  className="bg-red-500 text-white border rounded-full py-3 px-5 hover:bg-yellow-600 mt-5" 
+  className="bg-red-500 text-white border rounded-full py-3 px-5
+   hover:bg-yellow-600 mt-5" 
   data-aos="fade-up" 
   data-aos-delay="400"
 >

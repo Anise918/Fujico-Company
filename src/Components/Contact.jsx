@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhoneVolume } from "react-icons/fa6";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -38,10 +38,14 @@ const Contact = () => {
    hover:underline">
     +254723747687
   </a>
-  <a href="tel:+254711465202" className="font-roboto text-blue-600 text-lg md:text-xl mb-2
-   hover:underline">
-    +254711465202
-  </a>
+  <a 
+  href="https://wa.me/+254731575481" 
+  target="_blank" 
+  className="flex items-center mb-3 text-green-500 hover:text-green-600 text-lg space-x-2"
+>
+  <FaWhatsapp className="text-2xl" />
+  <span>Contact us on WhatsApp</span>
+</a>
 </div>
 
         <div className='flex flex-col'>
