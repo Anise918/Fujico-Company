@@ -52,10 +52,10 @@ const Contact = () => {
           <h1 className="font-space text-gray-600 text-xl mb-4">Address</h1>
           <p className='mb-2 '>
           <a
-          href="mailto:fujicotechkenya@gmail.com"
+          href="mailto:fujicoteckenya@gmail.com"
           className="text-blue-600 hover:underline text-xl "
         >
-          fujicotechkenya@gmail.com
+          fujicoteckenya@gmail.com
         </a>
 
           </p>
