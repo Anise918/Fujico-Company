@@ -77,19 +77,23 @@ const Home = () => {
   <div className=" md:w-1/2">
   <img className='border rounded-lg mb-9 ' src=' https://images.unsplash.com/photo-1660492039315-065884716fea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.
   3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGVzY2FsYXRvcnN8ZW58MHx8MHx8fDA%3D'/>
-    <p className='mb-7 sm: mt-0  font-roboto leading-relaxed
-     text-gray-600 text-center  lg:text-left'>
-      We take pride in our rich experience, 
-      having successfully delivered projects both locally and internationally, 
-      demonstrating our commitment to excellence and innovation on a global scale. <br/>
-      Locally, Fujico Limited has worked on notable projects such as building elevators in 
-     <span className='text-red-600'> Biashara Plaza - Thika Town, Bazar Villas - Thika, Pearl Gardens, City Se Breeze,</span>
-       and 
-       <span className='text-red-600'>Sunny Heights.</span> 
-      <br/>Internationally, we have collaborated with esteemed clients, 
-      including Erigavo Hotel, Somali Telecom, 
-      Kharia Telesom Head Office, Hormud, and Grand Plaza.
-    </p>
+   <p className='mb-7 sm: mt-0 font-roboto leading-relaxed text-gray-600 text-center lg:text-left'>
+  We take pride in our rich experience, 
+  having successfully delivered projects both locally and internationally, 
+  demonstrating our commitment to excellence and innovation on a global scale. <br/>
+  Locally, Fujico Limited has worked on notable projects such as building elevators in 
+  <span className='text-red-600'> Biashara Plaza - Thika Town, Bazar Villas - Thika, Pearl Gardens, City Se Breeze,</span>
+  and 
+  <span className='text-red-600'> Sunny Heights.</span> 
+  <br/>Internationally, we have collaborated with esteemed clients, 
+  including Erigavo Hotel, Somali Telecom, Kharia Telesom Head Office, Hormud, and Grand Plaza. 
+  We have also worked in Seychelles on projects such as 
+  <span className='text-red-600'> Unity House Seychelles, MCB Bank Seychelles, National Library, and the Central Bank of Seychelles.</span>
+  <br/>Additionally, 
+  <span className='text-red-600'> Salute Apartment in Donholm, Nairobi</span> is currently under maintenance.
+</p>
+
+
   </div>
 </div>
 
